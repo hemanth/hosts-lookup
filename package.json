@@ -1,6 +1,6 @@
 {
   "name": "hosts-lookup",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Lookup your `/etc/hosts`",
   "license": "MIT",
   "repository": "hemanth/hosts-lookup",
