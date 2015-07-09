@@ -1,5 +1,5 @@
 'use strict';
-var h = require('hostile');
+var getHosts = require('get-hosts');
 module.exports = function (hname,cb) {
 	if (typeof hname !== 'string') {
 		throw new TypeError('Expected a string');
@@ -8,7 +8,7 @@ module.exports = function (hname,cb) {
 		throw new TypeError('Expected a callback function');
 	}
 
-	var host = h.get().filter(function(info){
+	var host = getHosts().filter(function(info){
 		return info[1] === hname
 	})[0];
 
