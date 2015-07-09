@@ -1,0 +1,34 @@
+{
+  "name": "hosts-lookup",
+  "version": "0.0.0",
+  "description": "Lookup your `/etc/hosts`",
+  "license": "MIT",
+  "repository": "hemanth/hosts-lookup",
+  "author": {
+    "name": "Hemanth.HM",
+    "email": "hemanth.hm@gmail.com",
+    "url": "h3manth.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "hosts",
+    "/etc",
+    "lookup",
+    "find",
+    "search"
+  ],
+  "dependencies": {
+    "hostile": "^1.0.2"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
