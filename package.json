@@ -26,7 +26,7 @@
     "search"
   ],
   "dependencies": {
-    "get-hosts": "^1.0.0"
+    "get-hosts": "^2.0.1"
   },
   "devDependencies": {
     "mocha": "*"
