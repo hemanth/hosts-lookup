@@ -14,10 +14,9 @@ $ npm install --save hosts-lookup
 
 ```js
 var hostsLookup = require('hosts-lookup');
-hostsLookup('crazy-cat', function(err, ip) {
-  // => ip is false if not found and err will be present.
-  // => ip is value from `hosts` if found.
-});
+hostsLookup('crazy-cat')
+ .then(console.log) // => ip is value from `hosts` if found.
+ .catch(console.error) 
 ```
 P.S: This module was created as a result of this [issue](https://github.com/sindresorhus/module-requests/issues/13).
 
