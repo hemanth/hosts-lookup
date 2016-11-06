@@ -8,12 +8,13 @@ module.exports = function (hname,cb) {
 		throw new TypeError('Expected a callback function');
 	}
 
-	var host = getHosts().filter(function(info){
-		return info[1] === hname
-	})[0];
+	var host = getHosts()
+		.filter(info => (
+			Object.keys(info)[0]).includes(hname)
+		)[0];
 
 	if (host) {
-		cb(null, host[0])
+		cb(null, host[Object.keys(host)[0]])
 	} else {
 		cb(new Error('No such host!'),false);
 	}
