@@ -29,6 +29,6 @@
     "get-hosts": "^2.0.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "3.4.0"
   }
 }
